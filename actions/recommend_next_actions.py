@@ -16,7 +16,6 @@ output_schema:
   properties:
     actions: {type: array}
   required: [actions]
-  type: object
 playground_input: '{"severity":"high","issue_summary":"Orders are delayed for a strategic account"}'
 """
 from pydantic import BaseModel, ConfigDict

@@ -15,7 +15,6 @@ output_schema:
   properties:
     results: {type: array}
   required: [results]
-  type: object
 playground_input: '{"query":"order processing delay"}'
 """
 from pydantic import BaseModel, ConfigDict

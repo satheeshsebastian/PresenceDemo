@@ -19,7 +19,6 @@ output_schema:
     case_id: {type: string}
     status: {type: string}
   required: [case_id, status]
-  type: object
 playground_input: '{"account_name":"Northwind Traders","subject":"Order processing delay","description":"Orders are delayed for the account.","severity":"high"}'
 """
 from pydantic import BaseModel, ConfigDict

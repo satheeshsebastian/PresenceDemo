@@ -18,7 +18,6 @@ output_schema:
   properties:
     draft: {type: string}
   required: [draft]
-  type: object
 playground_input: '{"account_name":"Northwind Traders","issue_summary":"Order processing is delayed","severity":"high","next_step":"Validate queue health and escalate to the incident lead"}'
 """
 from pydantic import BaseModel, ConfigDict

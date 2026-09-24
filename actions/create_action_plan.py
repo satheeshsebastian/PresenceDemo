@@ -17,7 +17,6 @@ output_schema:
     plan_id: {type: string}
     tasks: {type: array}
   required: [plan_id, tasks]
-  type: object
 playground_input: '{"case_id":"CASE-1004","issue_summary":"Order processing delay"}'
 """
 from pydantic import BaseModel, ConfigDict
