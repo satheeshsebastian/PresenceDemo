@@ -1,0 +1,10 @@
+name: Issue outcome
+description: Captures the outcome of an issue-management conversation.
+is_enabled: true
+key: session.issue_outcome
+namespace: project
+target:
+  kind: session
+value_schema:
+  type: string
+  enum: [case_created, guidance_only, human_handoff, unresolved]

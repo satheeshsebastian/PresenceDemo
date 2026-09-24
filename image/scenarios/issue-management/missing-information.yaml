@@ -1,0 +1,10 @@
+name: Missing information
+description: Ask focused questions when the issue lacks required intake fields.
+is_enabled: true
+expected_outcome: The agent asks for the missing account, severity, and impact details before proposing a CRM write.
+prompt: Say that something is wrong with a customer process but initially provide no account, severity, or business impact. Answer the agent's questions one at a time.
+setup:
+  session:
+    inputs:
+      user_name: Jamie Lee
+tags: [chat, regression, intake]

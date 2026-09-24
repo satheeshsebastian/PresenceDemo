@@ -1,0 +1,16 @@
+name: Policy adherence
+description: Checks whether the agent followed confirmation and grounding policy.
+is_enabled: true
+key: session.policy_adherence
+namespace: project
+target:
+  kind: session
+value_schema:
+  type: boolean
+  oneOf:
+    - const: true
+      title: Passed
+      assessment: pass
+    - const: false
+      title: Failed
+      assessment: fail

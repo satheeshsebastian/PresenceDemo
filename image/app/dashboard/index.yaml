@@ -1,0 +1,28 @@
+name: Issue Manager Dashboard
+is_enabled: true
+tabs:
+  overview:
+    title: Overview
+    order: 10
+    charts:
+      - id: policy_adherence
+        title: Policy adherence
+        visualization: card
+        width: half
+        metric:
+          kind: session_count
+          ratio:
+            label: project.session.policy_adherence
+            numerator_values: [true]
+      - id: completed_sessions
+        title: Completed sessions
+        visualization: card
+        width: half
+        metric:
+          kind: session_count
+      - id: issue_outcomes
+        title: Issue outcomes
+        visualization: line
+        width: full
+        metric:
+          kind: session_count
