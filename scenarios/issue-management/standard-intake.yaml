@@ -1,0 +1,11 @@
+name: Standard issue intake
+description: Capture a normal issue, retrieve guidance, and create a case after confirmation.
+is_enabled: true
+expected_outcome: The agent captures the issue, searches knowledge, recommends actions, asks for confirmation, then creates a case and action plan.
+prompt: You are an account manager for Northwind Traders. Report that order processing is delayed, the business impact is high, and ask the agent to help create a case and action plan. Confirm when asked.
+setup:
+  session:
+    inputs:
+      user_name: Alex Morgan
+      account_name: Northwind Traders
+tags: [chat, regression, happy-path]

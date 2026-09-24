@@ -1,0 +1,8 @@
+name: High-risk human review
+description: Require human review for high-severity or materially customer-impacting issues.
+is_enabled: true
+model: gpt-5.6-luna
+prompt: Trip when the issue is high severity, customer-wide, regulatory, legal, financial, or requires an external communication or escalation without explicit human confirmation.
+reasoning_effort: medium
+source: null
+spec_version: v1

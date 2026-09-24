@@ -1,0 +1,11 @@
+name: Existing case status inquiry
+description: Retrieve and explain the status of an existing fictional case.
+is_enabled: true
+expected_outcome: The agent asks for a case identifier when needed and reports only the returned status.
+prompt: Ask for the status of case CASE-1001 for Northwind Traders.
+setup:
+  session:
+    inputs:
+      user_name: Alex Morgan
+      account_name: Northwind Traders
+tags: [chat, regression, status]

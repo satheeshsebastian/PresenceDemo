@@ -1,0 +1,22 @@
+version: 13
+default_locale_profile: en
+shared:
+  project_instructions: Be concise, practical, and transparent. This is a hackathon demo using fictional CRM data.
+channels:
+  chat:
+    root_sop: /sops/index.md
+    config:
+      model: gpt-5.6-luna
+      reasoning_effort: medium
+  phone:
+    root_sop: /sops/index.md
+    config:
+      model: gpt-realtime-2.1
+      speed: 1.0
+      transcription_instructions: Ask one question at a time and confirm severity before any write.
+      transcription_model: gpt-transcribe
+      voice: marin
+locale_profiles:
+  en:
+    phone:
+      greeting_instructions: Greet the account team member briefly and ask what issue they need help managing.
